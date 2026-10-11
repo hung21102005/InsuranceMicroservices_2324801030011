@@ -1,0 +1,11 @@
+C:\Github\InsuranceMicroservices_2324801030011\AuthService.Api\bin\Debug\net8.0\AuthService.Api.deps.json
+C:\Github\InsuranceMicroservices_2324801030011\AuthService.Api\bin\Debug\net8.0\AuthService.Api.dll
+C:\Github\InsuranceMicroservices_2324801030011\AuthService.Api\bin\Debug\net8.0\AuthService.Api.pdb
+C:\Github\InsuranceMicroservices_2324801030011\AuthService.Api\obj\Debug\net8.0\AuthService.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Github\InsuranceMicroservices_2324801030011\AuthService.Api\obj\Debug\net8.0\AuthService.Api.AssemblyInfoInputs.cache
+C:\Github\InsuranceMicroservices_2324801030011\AuthService.Api\obj\Debug\net8.0\AuthService.Api.AssemblyInfo.cs
+C:\Github\InsuranceMicroservices_2324801030011\AuthService.Api\obj\Debug\net8.0\AuthService.Api.csproj.CoreCompileInputs.cache
+C:\Github\InsuranceMicroservices_2324801030011\AuthService.Api\obj\Debug\net8.0\AuthService.Api.dll
+C:\Github\InsuranceMicroservices_2324801030011\AuthService.Api\obj\Debug\net8.0\refint\AuthService.Api.dll
+C:\Github\InsuranceMicroservices_2324801030011\AuthService.Api\obj\Debug\net8.0\AuthService.Api.pdb
+C:\Github\InsuranceMicroservices_2324801030011\AuthService.Api\obj\Debug\net8.0\ref\AuthService.Api.dll

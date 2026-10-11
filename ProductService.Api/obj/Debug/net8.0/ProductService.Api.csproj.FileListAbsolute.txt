@@ -1,0 +1,11 @@
+C:\Github\InsuranceMicroservices_2324801030011\ProductService.Api\bin\Debug\net8.0\ProductService.Api.deps.json
+C:\Github\InsuranceMicroservices_2324801030011\ProductService.Api\bin\Debug\net8.0\ProductService.Api.dll
+C:\Github\InsuranceMicroservices_2324801030011\ProductService.Api\bin\Debug\net8.0\ProductService.Api.pdb
+C:\Github\InsuranceMicroservices_2324801030011\ProductService.Api\obj\Debug\net8.0\ProductService.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Github\InsuranceMicroservices_2324801030011\ProductService.Api\obj\Debug\net8.0\ProductService.Api.AssemblyInfoInputs.cache
+C:\Github\InsuranceMicroservices_2324801030011\ProductService.Api\obj\Debug\net8.0\ProductService.Api.AssemblyInfo.cs
+C:\Github\InsuranceMicroservices_2324801030011\ProductService.Api\obj\Debug\net8.0\ProductService.Api.csproj.CoreCompileInputs.cache
+C:\Github\InsuranceMicroservices_2324801030011\ProductService.Api\obj\Debug\net8.0\ProductService.Api.dll
+C:\Github\InsuranceMicroservices_2324801030011\ProductService.Api\obj\Debug\net8.0\refint\ProductService.Api.dll
+C:\Github\InsuranceMicroservices_2324801030011\ProductService.Api\obj\Debug\net8.0\ProductService.Api.pdb
+C:\Github\InsuranceMicroservices_2324801030011\ProductService.Api\obj\Debug\net8.0\ref\ProductService.Api.dll
