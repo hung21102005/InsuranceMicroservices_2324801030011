@@ -59,6 +59,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DashboardService.Api", "Das
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PricingService.IntegrationTest", "PricingService.IntegrationTest\PricingService.IntegrationTest.csproj", "{EC614B1A-C263-4310-9E2F-4C0F6DFAA66E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DashboardService", "DashboardService\DashboardService.csproj", "{A4F9AF91-6CF7-408D-8CDC-0584D84AFB61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DashboardService.Test", "DashboardService.Test\DashboardService.Test.csproj", "{8A1ADCEB-2C0E-4AA0-AF18-5CE63808B485}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -180,5 +184,13 @@ Global
 		{EC614B1A-C263-4310-9E2F-4C0F6DFAA66E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC614B1A-C263-4310-9E2F-4C0F6DFAA66E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC614B1A-C263-4310-9E2F-4C0F6DFAA66E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4F9AF91-6CF7-408D-8CDC-0584D84AFB61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4F9AF91-6CF7-408D-8CDC-0584D84AFB61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4F9AF91-6CF7-408D-8CDC-0584D84AFB61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4F9AF91-6CF7-408D-8CDC-0584D84AFB61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A1ADCEB-2C0E-4AA0-AF18-5CE63808B485}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A1ADCEB-2C0E-4AA0-AF18-5CE63808B485}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A1ADCEB-2C0E-4AA0-AF18-5CE63808B485}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A1ADCEB-2C0E-4AA0-AF18-5CE63808B485}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
