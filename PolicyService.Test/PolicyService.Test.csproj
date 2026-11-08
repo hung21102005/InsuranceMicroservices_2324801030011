@@ -20,4 +20,9 @@
     <Using Include="Xunit" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PolicyService.Api\PolicyService.Api.csproj" />
+    <ProjectReference Include="..\PolicyService\PolicyService.csproj" />
+  </ItemGroup>
+
 </Project>

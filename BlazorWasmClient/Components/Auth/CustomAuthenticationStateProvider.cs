@@ -21,7 +21,7 @@ public class CustomAuthenticationStateProvider : AuthenticationStateProvider
         try
         {
             var userSession = await sessionStorageService.ReadEncryptedItem<UserSession>("UserSession");
-            if (userSession == null)
+            if (userSession == null || DateTime.UtcNow >= userSession.ExpiryTimestamp.ToUniversalTime())
                 return await Task.FromResult(new AuthenticationState(anonymous));
 
             var claimsPrinciple = new ClaimsPrincipal(new ClaimsIdentity(new List<Claim>
@@ -45,11 +45,11 @@ public class CustomAuthenticationStateProvider : AuthenticationStateProvider
 
         if (userSession != null)
         {
-            var claimsPrinciple = new ClaimsPrincipal(new ClaimsIdentity(new List<Claim>
+            claimsPrincipal = new ClaimsPrincipal(new ClaimsIdentity(new List<Claim>
             {
                 new Claim(ClaimTypes.Name, userSession.UserName),
                 new Claim(ClaimTypes.Role, userSession.Role),
-            }));
+            }, "JwtAuth"));
             await sessionStorageService.SaveItemAsEncrypted("UserSession", userSession);
         }
         else
@@ -65,7 +65,7 @@ public class CustomAuthenticationStateProvider : AuthenticationStateProvider
         var result = string.Empty;
 
         var userSession = await sessionStorageService.ReadEncryptedItem<UserSession>("UserSession");
-        if (userSession != null && DateTime.Now < userSession.ExpiryTimestamp)
+        if (userSession != null && DateTime.UtcNow < userSession.ExpiryTimestamp.ToUniversalTime())
         {
             return userSession.Token;
         }

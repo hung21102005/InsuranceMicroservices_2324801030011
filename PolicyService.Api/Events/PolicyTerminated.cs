@@ -1,5 +1,6 @@
 using System;
 using MediatR;
+using PolicyService.Api.Commands.Dtos;
 
 namespace PolicyService.Api.Events;
 
@@ -8,6 +9,10 @@ public class PolicyTerminated : INotification
     public string PolicyNumber { get; set; } = string.Empty;
     public DateTime PolicyTo { get; set; }
     public decimal? AmountToReturn { get; set; }
+    public string ProductCode { get; set; } = string.Empty;
+    public DateTime PolicyFrom { get; set; }
+    public PersonDto PolicyHolder { get; set; } = new();
+    public decimal TotalPremium { get; set; }
 
     public PolicyTerminated() { }
 

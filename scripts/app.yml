@@ -9,6 +9,8 @@ services:
     container_name: dotnet-agent-portal-gateway
     ports:
     - 8099:8099
+    depends_on:
+      - eureka
 
   dotnet-auth-service:
     build: 
@@ -27,6 +29,9 @@ services:
     container_name: dotnet-chat-service
     ports:
     - 4099:4099
+    depends_on:
+      - eureka
+      - rabbitmq
 
   dotnet-payment-service:
     build: 
@@ -36,6 +41,9 @@ services:
     container_name: dotnet-payment-service
     ports:
     - 5070:5070
+    depends_on:
+      - postgres
+      - rabbitmq
 
   dotnet-policy-search-service:
     build: 
@@ -45,6 +53,10 @@ services:
     container_name: dotnet-policy-search-service
     ports:
     - 5065:5065
+    depends_on:
+      - eureka
+      - elasticsearch
+      - rabbitmq
 
   dotnet-policy-service:
     build: 
@@ -54,6 +66,10 @@ services:
     container_name: dotnet-policy-service
     ports:
     - 5050:5050
+    depends_on:
+      - eureka
+      - postgres
+      - rabbitmq
 
   dotnet-pricing-service:
     build: 
@@ -62,7 +78,10 @@ services:
     image: dotnet-pricing-service
     container_name: dotnet-pricing-service
     ports:
-    - 5040:5040
+    - 5041:5040
+    depends_on:
+      - eureka
+      - postgres
 
   dotnet-product-service:
     build: 
@@ -72,6 +91,8 @@ services:
     container_name: dotnet-product-service
     ports:
     - 5030:5030
+    depends_on:
+      - eureka
 
   dotnet-dashboard-service:
     build: 
@@ -81,6 +102,22 @@ services:
     container_name: dotnet-dashboard-service
     ports:
     - 5035:5035
+    depends_on:
+      - eureka
+      - elasticsearch
+      - rabbitmq
+
+  dotnet-blazor-client:
+    build:
+      context: ../
+      dockerfile: BlazorWasmClient/Dockerfile
+    image: dotnet-blazor-client
+    container_name: dotnet-blazor-client
+    ports:
+    - 5081:80
+    depends_on:
+      - dotnet-auth-service
+      - dotnet-agent-portal-gateway
 
   dotnet-web-vue:
     build: ../Web
